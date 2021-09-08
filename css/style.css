@@ -1,0 +1,352 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+        position: relative;
+        /* щоб спозиціонувати картинку optimization*/
+    }
+
+    .promo {
+        background: url(../img/bg/Rectangle%203.png) center center/cover no-repeat scroll;
+        height: 800px;
+        padding: 39px 0px 62px 0px;
+    }
+
+    .logo .logo_img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .logo .logo_text {
+        margin-top: 14px;
+        text-align: center;
+        color: #ffff;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    h1 {
+        margin-top: 53px;
+    }
+
+    h2.title {
+        margin-top: 30px;
+    }
+
+    .title {
+        font-size: 41px;
+        color: #f9bf3b;
+        text-align: center;
+        font-weight: 900;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    .simple .title_big {
+        font-size: 80px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 21px;
+    }
+
+    .promo_text {
+        padding: 0 13px;
+        text-align: center;
+        margin-top: 23px;
+        font-size: 21px;
+        color: #fff;
+        font-weight: 300;
+        line-height: 28px;
+    }
+
+    .promo_text span {
+        color: yellow;
+        font-weight: 700;
+        font-family: "Roboto - Bold";
+    }
+
+    .bottom1 {
+        display: block;
+        width: 313px;
+        height: 72px;
+        background-image: linear-gradient(0.0deg, #2798b9 0%, #3ab6da 100%);
+        border: 4px solid rgba(0, 0, 0, 0.22);
+        text-align: center;
+        margin: 73px auto;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 24px;
+        color: #ffffff;
+        text-transform: uppercase;
+        cursor: pointer;
+        outline: none;
+        border-radius: 2px;
+    }
+
+    .more {
+        margin-top: 73px;
+    }
+
+    .more .more_text {
+        font-size: 15px;
+        font-weight: 100;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .more .more_img {
+        display: block;
+        margin: 13px auto 62px;
+    }
+
+    .waiting {
+        min-height: 604px;
+        /*якщо буде більше тексту,щоб він не вилазив за межі блоку-"резиновий блок"*/
+        background-color: #efefef;
+        padding: 85px 0 75px 0;
+    }
+
+    .waiting_header {
+        font-size: 30px;
+        text-align: center;
+        color: #252525;
+        font-weight: 400;
+    }
+
+    .waiting .waiting_divider {
+        width: 217px;
+        height: 4px;
+        background-color: #f9bf3b;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    .waiting .waiting_subheader {
+        font-size: 23px;
+        text-align: center;
+        color: #4a4a4a;
+        margin-top: 17px;
+        font-weight: 400;
+    }
+
+    .waiting .waiting_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    .waiting .waiting_wrapper .waiting_item {
+        width: 339px;
+    }
+
+    .waiting .waiting_wrapper .waiting_item .waiting_img {
+        width: 100%;
+    }
+
+    .waiting .waiting_wrapper .waiting_item .waiting_description {
+        margin-top: 33px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 21px;
+        text-align: center;
+        color: #4a4a4a;
+    }
+
+    .optimization {
+        min-height: 550px;
+        padding: 102px 0 107px 0px;
+    }
+
+    .optimization .optimization_header {
+        margin-left: 391px;
+        font-size: 30px;
+        font-weight: 900;
+        color: #299cbd;
+    }
+
+    .optimization .optimization_text {
+        margin-top: 25px;
+        margin-left: 391px;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 27px;
+        color: #4a4a4a;
+    }
+
+    .optimization .optimization_text span {
+        font-weight: 700;
+    }
+
+    .optimization .optimization_img {
+        position: absolute;
+        top: -48px;
+        left: -240px;
+        z-index: -1;
+    }
+
+    .finish {
+        min-height: 447px;
+        background: url(../img/bg/second%20bg.png) center center/cover no-repeat scroll;
+        padding: 86px 0 79px 0;
+        /*padding ми встановлюємо для section а не для контейнера,тільки зверху і знизу,справа і ліво по 0*/
+    }
+
+    .finish .finish_header {
+        font-size: 30px;
+        text-align: center;
+        color: #efefef;
+        font-weight: 300;
+    }
+
+    .finish .finish_divider {
+        width: 217px;
+        height: 4px;
+        background-color: #f9bf3b;
+        margin: 0 auto;
+        margin-top: 18px;
+        margin-top: 23px;
+    }
+
+    .finish .finish_wrapper {
+        margin-top: 41px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .finish .finish_wrapper .finish_item {
+        width: 204px;
+    }
+
+    .finish .finish_wrapper .finish_item .finish_round {
+        width: 115px;
+        height: 115px;
+        margin: 0 auto;
+        background-color: #b4e2ff;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .finish .finish_wrapper .finish_item .finish_descr {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 20px;
+        color: #efefef;
+    }
+
+    .bonus {
+        min-height: 628px;
+        background-color: #efefef;
+        padding: 86px 0 87px 0;
+    }
+
+    .bonus .bonus_img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .bonus .bonus_subheader {
+        font-size: 30px;
+        line-height: 43px;
+        text-align: center;
+        color: #252525;
+        margin-top: 42px;
+        font-weight: 400;
+    }
+
+    .bonus .bonus_button {
+        display: block;
+        width: 313px;
+        height: 72px;
+        box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.18);
+        border: solid 4px rgba(0, 0, 0, 0.11);
+        background-image: linear-gradient(to top, #2798b9, #3ab6da);
+        text-shadow: -0.7px -0.7px 0 rgba(0, 0, 0, 0.22);
+        font-size: 21px;
+        color: #ffffff;
+        text-transform: uppercase;
+        cursor: pointer;
+        outline: none;
+        margin: 52px auto 87px;
+        font-weight: 400;
+    }
+
+    .lesson {
+        min-height: 515px;
+        background-color: #ffffff
+    }
+
+    .lesson .lesson_img {
+        display: block;
+        margin: 89px auto 37px;
+    }
+
+    .lesson .lesson_header1 {
+        font-size: 30px;
+        text-align: center;
+        color: #252525;
+        font-weight: 400;
+    }
+
+    .lesson .lesson_header2 {
+        font-size: 36px;
+        font-weight: 900;
+        text-align: center;
+        color: #299cbd;
+        margin: 30px 0 25px 0;
+        font-weight: 900;
+    }
+
+    .lesson .lesson_header3 {
+        font-size: 23px;
+        line-height: 20px;
+        text-align: center;
+        color: #4a4a4a;
+        font-weight: 400;
+    }
+
+    footer {
+        min-height: 166px;
+        background-color: #1a1a1a;
+        padding: 61px 0 69px 0;
+    }
+
+    .info {
+        margin: 0 auto;
+        width: 377px;
+        text-align: center;
+        color: #888888;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 21px;
+    }
+
+    footer a {
+        color: #888888;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 21px;
+        text-decoration: none;
+    }
+
+    .underlined {
+        text-decoration: underline;
+    }
