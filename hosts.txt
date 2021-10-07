@@ -1,4 +1,4 @@
 [AWS_SERVERS]
 web1    ansible_host=18.193.149.159
 localhost
-web2    ansible_host=3.68.250.21       ansible_user=ubuntu
+web2    ansible_host=3.68.250.21       ansible_user=ubuntu     ansible_ssh_private_key_file=Frankfurt-keys-AWS.pem
