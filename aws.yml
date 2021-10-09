@@ -10,8 +10,8 @@
   tasks:
   - name: launch AWS instance using Ansible
     ec2:
-      aws_access_key: 
-      aws_secret_key: 
+      aws_access_key: {{ aws_key }}
+      aws_secret_key: {{ aws_key1 }}
       key_name: Frankfurt-keys-AWS
       instance_type: t2.micro
       image: ami-05f7491af5eef733a
