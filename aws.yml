@@ -10,8 +10,8 @@
   tasks:
   - name: launch AWS instance using Ansible
     ec2:
-      aws_access_key: {{ aws_key }}
-      aws_secret_key: {{ aws_key1 }}
+      aws_access_key: "{{ aws_key }}"
+      aws_secret_key: "{{ aws_key1 }}"
       key_name: Frankfurt-keys-AWS
       instance_type: t2.micro
       image: ami-05f7491af5eef733a
@@ -25,11 +25,11 @@
 
   - name: EIP
     ec2_eip:
-            aws_access_key: {{ aws_key }}
-            aws_secret_key: {{ aws_key1 }}
+            aws_access_key: "{{ aws_key }}"
+            aws_secret_key: "{{ aws_key1 }}"
             in_vpc: yes
             state: present
             device_id: "{{ ec2.instances[0].id }}"
             region: eu-central-1
-            ip: 3.68.250.21
+            ip: 3.69.91.150
     register: instance_eip
