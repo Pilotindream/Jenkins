@@ -6,4 +6,4 @@
   become: yes
   tasks:
   - name: Create docker container
-    shell: docker run -d --name my-apache-app -p 1000:80 -v /home/ubuntu/apache2:/usr/local/apache2/htdocs/ httpd:2.4
+    shell: docker run -d -p 8080:80 -v /home/ubuntu/apache2:/usr/local/apache2/htdocs/ httpd:2.4
