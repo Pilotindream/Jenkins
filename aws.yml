@@ -5,7 +5,7 @@
 - name: Launching AWS ec-2 instances
   hosts: localhost
   connection: local
-  vars:
+  vars_files:
        - vars.yml
   tasks:
   - name: launch AWS instance using Ansible
